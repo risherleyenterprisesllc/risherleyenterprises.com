@@ -10,6 +10,8 @@ toggle.addEventListener("click", () => {
 const form = document.getElementById("contactForm");
 const message = document.getElementById("formMessage");
 
+document.getElementById("timeField").value = new Date().toLocaleString();
+
 form.addEventListener("submit", function(e) {
   e.preventDefault();
 
