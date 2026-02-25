@@ -1,0 +1,29 @@
+{
+  "name": "risherleyenterprises.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/risherleyenterprisesllc/risherleyenterprises.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/risherleyenterprisesllc/risherleyenterprises.com/issues"
+  },
+  "homepage": "https://risherleyenterprises.com",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "firebase-admin": "^13.6.1",
+    "stripe": "^20.3.1"
+  }
+}

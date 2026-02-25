@@ -49,3 +49,22 @@ function buyProduct(name, price) {
 
   alert("✅ Purchase recorded (demo)");
 }
+
+function addToCart(product) {
+  const user = firebase.auth().currentUser;
+  if (!user) {
+    alert("Please log in first.");
+    return;
+  }
+
+  db.collection("carts")
+    .doc(user.uid)
+    .collection("items")
+    .add({
+      ...product,
+      quantity: 1,
+      addedAt: new Date()
+    });
+
+  alert("🛒 Added to cart!");
+}
