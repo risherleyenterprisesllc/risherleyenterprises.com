@@ -1,16 +1,79 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Risherley Enterprises</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<h1>Welcome to Risherley Enterprises!</h1>
+
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar">
+    <h1 class="logo">Risherley Enterprises</h1>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <h2>Building Solutions for Your Business</h2>
+  <p>Your trusted partner for professional services.</p>
+  <a href="#contact" class="btn">Get Started</a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p>
+    Risherley Enterprises is dedicated to delivering high-quality services with professionalism and integrity.
+    Customize this section with your company story, mission, and values.
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section light">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Service One</h3>
+      <p>Describe your core service offering.</p>
+    </div>
+    <div class="card">
+      <h3>Service Two</h3>
+      <p>Describe another key service.</p>
+    </div>
+    <div class="card">
+      <h3>Service Three</h3>
+      <p>Highlight what makes you different.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p id="formMessage"></p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Risherley Enterprises. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
