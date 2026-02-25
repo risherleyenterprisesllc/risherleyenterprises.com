@@ -10,8 +10,19 @@ toggle.addEventListener("click", () => {
 const form = document.getElementById("contactForm");
 const message = document.getElementById("formMessage");
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", function(e) {
   e.preventDefault();
-  message.textContent = "Thanks! Your message has been sent.";
-  form.reset();
+
+  emailjs.sendForm(
+    "service_73pre4c",
+    "template_q94nkln",
+    this
+  )
+  .then(() => {
+    message.textContent = "Message sent successfully!";
+    form.reset();
+  })
+  .catch(() => {
+    message.textContent = "Failed to send message. Try again.";
+  });
 });
