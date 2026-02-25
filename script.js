@@ -1,4 +1,4 @@
-// Mobile menu toggle
+// Mobile menu
 const toggle = document.getElementById("menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
@@ -6,7 +6,7 @@ toggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
 
-// Fake contact form handler
+// Email form
 const form = document.getElementById("contactForm");
 const message = document.getElementById("formMessage");
 
@@ -19,10 +19,13 @@ form.addEventListener("submit", function(e) {
     this
   )
   .then(() => {
-    message.textContent = "Message sent successfully!";
+    message.textContent = "✅ Message sent successfully!";
+    message.style.color = "green";
     form.reset();
   })
-  .catch(() => {
-    message.textContent = "Failed to send message. Try again.";
+  .catch((error) => {
+    message.textContent = "❌ Failed to send message.";
+    message.style.color = "red";
+    console.error(error);
   });
 });
