@@ -1,155 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Products - Risherley Enterprises | Premium Coffee & Mugs</title>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Products - Risherley Enterprises | Premium Coffee Powder & Tumblers</title>
+    <meta name="description" content="Shop premium coffee powder and stylish, leak-proof tumblers from Risherley Enterprises. Perfect gifts for coffee lovers." />
+    <meta name="keywords" content="coffee powder, premium coffee, tumblers, stainless steel tumbler, coffee gifts, Risherley Enterprises" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Risherley" />
+    <link rel="manifest" href="/site.webmanifest" />
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="favicon.png" alt="Risherley Enterprises Logo" /></a>
+                <span>Risherley Enterprises LLC</span>
+            </div>
 
-        <!-- Font Awesome Icons -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        />
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="products.html" class="products-link"><i class="fas fa-mug-hot"></i> Products</a></li>
+            </ul>
 
-        <!-- Google Fonts -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
 
-        <link rel="stylesheet" href="styles.css" />
+    <!-- PRODUCTS HERO -->
+    <section class="products-hero">
+        <div class="products-hero-content">
+            <h1>Our Premium Collection</h1>
+            <p>Discover our carefully selected premium coffee powder and stylish, leak-proof tumblers.</p>
+        </div>
+    </section>
 
-        <!-- Favicon -->
-        <link
-            rel="icon"
-            type="image/png"
-            href="/favicon-96x96.png"
-            sizes="96x96"
-        />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="/apple-touch-icon.png"
-        />
-        <meta name="apple-mobile-web-app-title" content="Risherley" />
-        <link rel="manifest" href="/site.webmanifest" />
-    </head>
-    <body>
-        <!-- NAVBAR -->
-        <header>
-            <nav class="navbar">
-                <div class="logo">
-                    <a href="index.html"
-                        ><img src="favicon.png" alt="Logo"
-                    /></a>
+    <!-- PRODUCTS GRID -->
+    <section class="section products-section">
+        <div class="container">
+            <div class="products-filter">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="coffee">Coffee Powder</button>
+                <button class="filter-btn" data-filter="mug">Tumblers</button>
+            </div>
+            <div id="products" class="products-grid"></div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="favicon.png" alt="Risherley Enterprises Logo" />
                     <span>Risherley Enterprises LLC</span>
                 </div>
-
-                <ul class="nav-links">
+                <p>Delivering premium coffee powder and stylish tumblers for the perfect experience.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
                     <li><a href="index.html#home">Home</a></li>
                     <li><a href="index.html#about">About</a></li>
                     <li><a href="index.html#services">Services</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
-                    <li>
-                        <a href="products.html" class="products-link"
-                            ><i class="fas fa-mug-hot"></i> Products</a
-                        >
-                    </li>
+                    <li><a href="products.html">Products</a></li>
                 </ul>
-
-                <div class="menu-toggle" id="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </nav>
-        </header>
-
-        <!-- PRODUCTS HERO -->
-        <section class="products-hero">
-            <div class="products-hero-content">
-                <h1>Our Premium Collection</h1>
-                <p>
-                    Discover our carefully curated selection of premium coffee
-                    blends and stylish mugs, crafted for coffee enthusiasts.
-                </p>
             </div>
-        </section>
-
-        <!-- PRODUCTS GRID -->
-        <section class="section products-section">
-            <div class="container">
-                <div class="products-filter">
-                    <button class="filter-btn active" data-filter="all">
-                        All Products
-                    </button>
-                    <button class="filter-btn" data-filter="coffee">
-                        Coffee
-                    </button>
-                    <button class="filter-btn" data-filter="mug">
-                        Mugs & Tumblers
-                    </button>
-                </div>
-                <div id="products" class="products-grid"></div>
+            <div class="footer-section">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="products.html">Premium Coffee Powder</a></li>
+                    <li><a href="products.html">Stainless Steel Tumblers</a></li>
+                    <li><a href="products.html">Coffee Powder Bundles</a></li>
+                    <li><a href="products.html">Gift Sets</a></li>
+                </ul>
             </div>
-        </section>
-
-        <!-- FOOTER -->
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <img src="favicon.png" alt="Logo" />
-                        <span>Risherley Enterprises LLC</span>
-                    </div>
-                    <p>
-                        Delivering premium coffee and stylish mugs for the
-                        perfect experience.
-                    </p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html#home">Home</a></li>
-                        <li><a href="index.html#about">About</a></li>
-                        <li><a href="index.html#services">Services</a></li>
-                        <li><a href="products.html">Products</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Products</h4>
-                    <ul>
-                        <li><a href="products.html">Premium Coffee</a></li>
-                        <li>
-                            <a href="products.html">Stainless Steel Mugs</a>
-                        </li>
-                        <li><a href="products.html">Coffee Bundles</a></li>
-                        <li><a href="products.html">Gift Sets</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Newsletter</h4>
-                    <p>Subscribe for exclusive offers and updates.</p>
-                    <div class="newsletter-form">
-                        <input type="email" placeholder="Your email" />
-                        <button><i class="fas fa-paper-plane"></i></button>
-                    </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Subscribe for exclusive offers and updates.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your email" />
+                    <button><i class="fas fa-paper-plane"></i></button>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>
-                    &copy; 2026 Risherley Enterprises LLC. All rights reserved.
-                </p>
-            </div>
-        </footer>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Risherley Enterprises LLC. All rights reserved.</p>
+        </div>
+    </footer>
 
-        <script src="products.js"></script>
-        <script src="script.js"></script>
-    </body>
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
