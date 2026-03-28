@@ -1,98 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Risherley Enterprises LLC</title>
+    <!-- Mirrored from www.risherleyenterprises.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Mar 2026 15:44:09 GMT -->
+    <!-- Added by HTTrack --><meta
+        http-equiv="content-type"
+        content="text/html;charset=utf-8"
+    /><!-- /Added by HTTrack -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Risherley Enterprises LLC</title>
 
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="favicon.png" type="image/png" />
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <meta name="apple-mobile-web-app-title" content="Risherley" />
+        <link rel="manifest" href="/site.webmanifest" />
 
-  <!-- EmailJS -->
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script>
-    (function(){
-      emailjs.init("Gehew9XIEb7qNZOZx");
-    })();
-  </script>
-</head>
+        <!-- EmailJS -->
+        <script src="../cdn.jsdelivr.net/npm/emailjs-com%403/dist/email.min.js"></script>
+        <script>
+            (function () {
+                emailjs.init("Gehew9XIEb7qNZOZx");
+            })();
+        </script>
+    </head>
 
-<body>
+    <body>
+        <!-- NAVBAR -->
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="favicon.png" alt="Logo" />
+                    <span>Risherley Enterprises LLC</span>
+                </div>
 
-<!-- NAVBAR -->
-<header>
-  <nav class="navbar">
-    <div class="logo">
-      <img src="favicon.png" alt="Logo">
-      <span>Risherley Enterprises LLC</span>
-    </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="products.html">Products</a></li>
+                </ul>
 
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="products.html">Products</a></li>
-    </ul>
+                <div class="menu-toggle" id="menu-toggle">☰</div>
+            </nav>
+        </header>
 
-    <div class="menu-toggle" id="menu-toggle">☰</div>
-  </nav>
-</header>
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <h2>Buy our premium products</h2>
+            <p>We sell premium Coffee & Mugs</p>
+            <a href="products.html" class="btn">Buy Our Products</a>
+        </section>
 
-<!-- HERO -->
-<section id="home" class="hero">
-  <h2>Building Solutions for Your Business</h2>
-  <p>Your trusted partner for professional services.</p>
-  <a href="#contact" class="btn">Get Started</a>
-</section>
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <p>
+                Risherley Enterprises LLC sells premium products such as
+                <strong>Coffe</strong> and <strong>Mugs</strong>
+            </p>
+        </section>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-  <h2>About Us</h2>
-  <p>
-    Risherley Enterprises LLC delivers high-quality services with professionalism, reliability, and integrity.
-  </p>
-</section>
+        <!-- SERVICES -->
+        <section id="services" class="section light">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="card">
+                    <h3>Consulting</h3>
+                    <p>Professional business and operational consulting.</p>
+                </div>
+                <div class="card">
+                    <h3>Project Management</h3>
+                    <p>Efficient execution and delivery of projects.</p>
+                </div>
+                <div class="card">
+                    <h3>Solutions</h3>
+                    <p>Custom solutions tailored to your needs.</p>
+                </div>
+            </div>
+        </section>
 
-<!-- SERVICES -->
-<section id="services" class="section light">
-  <h2>Our Services</h2>
-  <div class="services">
-    <div class="card">
-      <h3>Consulting</h3>
-      <p>Professional business and operational consulting.</p>
-    </div>
-    <div class="card">
-      <h3>Project Management</h3>
-      <p>Efficient execution and delivery of projects.</p>
-    </div>
-    <div class="card">
-      <h3>Solutions</h3>
-      <p>Custom solutions tailored to your needs.</p>
-    </div>
-  </div>
-</section>
+        <!-- CONTACT -->
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
 
-<!-- CONTACT -->
-<section id="contact" class="section">
-  <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                />
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                />
+                <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    required
+                ></textarea>
+                <input type="hidden" name="time" id="timeField" />
+                <button type="submit">Send Message</button>
+            </form>
 
-  <form id="contactForm">
-    <input type="text" name="name" placeholder="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" required />
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <input type="hidden" name="time" id="timeField">
-    <button type="submit">Send Message</button>
-  </form>
+            <p id="formMessage"></p>
+        </section>
 
-  <p id="formMessage"></p>
-</section>
+        <!-- FOOTER -->
+        <footer>
+            <p>© 2026 Risherley Enterprises LLC. All rights reserved.</p>
+        </footer>
 
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 Risherley Enterprises LLC. All rights reserved.</p>
-</footer>
+        <script src="script.js"></script>
+    </body>
 
-<script src="script.js"></script>
-</body>
+    <!-- Mirrored from www.risherleyenterprises.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Mar 2026 15:44:14 GMT -->
 </html>
