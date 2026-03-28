@@ -68,7 +68,7 @@ function renderProducts(category = "all") {
         <div class="product-card" onclick="buyProduct('${product.url}')">
             <div class="product-image">
                 <img src="${product.image}" alt="${product.name}" onerror="this.src='https://placehold.co/400x400/1a1a2e/white?text=Product'">
-                <span class="product-badge">${product.category === "coffee" ? "☕ Coffee Powder" : "🥤 Tumbler"}</span>
+                <span class="product-badge">${product.category === "coffee" ? "☕ Coffee" : "🥤 Tumbler"}</span>
             </div>
             <div class="product-info">
                 <h3 title="${product.name.replace(/"/g, '&quot;')}">${truncateText(product.name, 80)}</h3>
