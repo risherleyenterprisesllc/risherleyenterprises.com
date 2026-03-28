@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Risherley Enterprises LLC | Premium Coffee & Mugs</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Risherley" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("Gehew9XIEb7qNZOZx");
+        })();
+    </script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="favicon.png" alt="Logo" />
+                <span>Risherley Enterprises LLC</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="products.html" class="products-link"><i class="fas fa-mug-hot"></i> Products</a></li>
+            </ul>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">Premium Quality Since 2024</div>
+            <h1 class="hero-title">Experience the Perfect Blend</h1>
+            <p class="hero-subtitle">Discover our premium coffee blends and stylish mugs, crafted for the perfect moment of relaxation.</p>
+            <div class="hero-buttons">
+                <a href="products.html" class="btn btn-primary">
+                    <i class="fas fa-shopping-cart"></i> Shop Now
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    <i class="fas fa-info-circle"></i> Learn More
+                </a>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-tag">Who We Are</span>
+                    <h2 class="section-title">Serving Excellence in Every Cup</h2>
+                    <p class="about-text">Risherley Enterprises LLC is dedicated to bringing you the finest coffee experience. Our premium coffee blends are carefully selected from the best beans, while our stylish mugs are designed to enhance your daily ritual.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Premium Arabica & Robusta Blend</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>100% Leak-Proof, BPA-Free Mugs</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Durable Stainless Steel Construction</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Freshly Roasted & Packaged</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Coffee Beans" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT PREVIEW SECTION -->
+    <section class="section preview-section light">
+        <div class="container">
+            <span class="section-tag">Featured Products</span>
+            <h2 class="section-title">Our Best Sellers</h2>
+            <p class="section-subtitle">Handpicked favorites our customers love</p>
+            
+            <div class="preview-grid">
+                <div class="preview-card">
+                    <div class="preview-image">
+                        <img src="https://m.media-amazon.com/images/I/41LdBY90ByL.jpg" alt="Premium Coffee" />
+                    </div>
+                    <h3>Premium Ground Coffee</h3>
+                    <p>Dark espresso roast, Arabica and Robusta blend</p>
+                    <div class="price">$25.00</div>
+                </div>
+                <div class="preview-card">
+                    <div class="preview-image">
+                        <img src="https://m.media-amazon.com/images/I/51ZnHG752ZL._AC_SY879_.jpg" alt="Tumbler" />
+                    </div>
+                    <h3>Stainless Steel Tumbler</h3>
+                    <p>30 oz, leak-proof, keeps drinks hot or cold</p>
+                    <div class="price">$35.00</div>
+                </div>
+                <div class="preview-card">
+                    <div class="preview-image">
+                        <img src="https://m.media-amazon.com/images/I/71F+KUoj8tL._SX679_PIbundle-4,TopRight,0,0_SX679SY602SH20_.jpg" alt="Coffee Bundle" />
+                    </div>
+                    <h3>Coffee Bundle Pack</h3>
+                    <p>4-pack premium ground coffee</p>
+                    <div class="price">$90.00</div>
+                </div>
+            </div>
+            
+            <div class="preview-cta">
+                <a href="products.html" class="btn btn-primary">View All Products <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <span class="section-tag">What We Offer</span>
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mug-hot"></i>
+                    </div>
+                    <h3>Premium Coffee</h3>
+                    <p>Rich, aromatic coffee blends crafted from the finest beans for an exceptional taste experience.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wine-bottle"></i>
+                    </div>
+                    <h3>Stylish Mugs</h3>
+                    <p>Durable, leak-proof mugs designed to keep your beverages at the perfect temperature.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Fast Shipping</h3>
+                    <p>Quick and reliable delivery right to your doorstep, ensuring freshness and quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">We'd Love to Hear From You</h2>
+                    <p class="contact-text">Have questions about our products? Want to place a bulk order? Reach out to us and we'll get back to you within 24 hours.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>info@risherleyenterprises.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required />
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <input type="hidden" name="time" id="timeField" />
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <p id="formMessage" class="form-message"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="favicon.png" alt="Logo" />
+                    <span>Risherley Enterprises LLC</span>
+                </div>
+                <p>Delivering premium coffee and stylish mugs for the perfect experience.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="products.html">Premium Coffee</a></li>
+                    <li><a href="products.html">Stainless Steel Mugs</a></li>
+                    <li><a href="products.html">Coffee Bundles</a></li>
+                    <li><a href="products.html">Gift Sets</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Subscribe for exclusive offers and updates.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Your email" />
+                    <button><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Risherley Enterprises LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
