@@ -1,59 +1,85 @@
 const productList = [
+    /*
     {
-        name: "RISHERLEY PREMIUM GROUND COFFEE, dark espresso roast, arabica and Robusta blend, 12 oz (Pack of 1)",
-        price: 25,
-        description: "Rich, aromatic dark espresso roast coffee. A perfect blend of Arabica and Robusta beans for a bold flavor experience.",
-        image: "https://m.media-amazon.com/images/I/41LdBY90ByL.jpg",
-        url: "https://a.co/d/03itoJdP",
+        name: "Product Name",
+        price: 0,
+        description: "Product description goes here.",
+        image: "https://example.com/product-image.jpg",
+        url: "https://example.com/product-page",
+        category: "coffee" // or "mug"
+    }
+    */
+   {
+        name: "30 oz Insulated Stainless Steel Tumbler with Lid and straw Double Wall Vacuum Travel Mug, Leak Proof Coffee Cup, Keeps Drinks Hot & Cold, BPA-Free Reusable Thermal Cup for Office, Gym & Car.",
+        price: 29.99,
+        description: "Premium stainless steel tumbler keeps your drinks hot or cold for hours. Leak-proof design with comfortable handle and straw. Cold 24 Hours,hot 24 hours.",
+        image: "https://m.media-amazon.com/images/I/512HMF4bnhL._AC_SY879_.jpg",
+        url: "https://a.co/d/0cXHWPJ1",
+        category: "mug"
+   },
+   {
+        name: "12 oz Insulated Stainless Steel Tumbler with Lid and straw Double Wall Vacuum Travel Mug,Leak Proof Coffee Cup,Keeps Drinks Hot & Cold,BPA-Free Reusable Thermal Cup for Office,Gym & Car.",
+        price: "???",
+        description: "",
+        image: "https://m.media-amazon.com/images/I/51SQcs2uslL._AC_SX679_.jpg",
+        url: "https://a.co/d/0ebiO3UV",
+        category: "mug"
+    },
+    {
+        name: "Risherley Premium Ground Coffee – Gourmet Arabica Blend, Fresh Roasted, Smooth Rich Flavor,Dark Roast, Low Acidity, Perfect for Drip, French Press & Espresso (Park of 1)",
+        price: "17.99 ($1.50/oz) - 10% off",
+        description: "",
+        image: "https://m.media-amazon.com/images/I/61-Lc2CZ+nL._SY679_.jpg",
+        url: "https://a.co/d/0bYjG1UE",
         category: "coffee"
     },
     {
-        name: "TUMBLER WITH HANDLE AND STRAW, 30 oz, White, 100% Leak Proof, BPA-Free",
-        price: 35,
-        description: "Premium stainless steel tumbler keeps your drinks hot or cold for hours. Leak-proof design with comfortable handle and straw.",
-        image: "https://m.media-amazon.com/images/I/51ZnHG752ZL._AC_SY879_.jpg",
-        url: "https://a.co/d/0bsqYgoL",
+        name: "12 oz Insulated Stainless Steel Tumbler with Lid and straw Double Wall Vacuum Travel Mug,Leak Proof Coffee Cup,Keeps Drinks Hot & Cold,BPA-Free Reusable Thermal Cup for Office,Gym & Car.",
+        price: 14.99,
+        description: "",
+        image: "https://m.media-amazon.com/images/I/51+c6bRNDmL._AC_SX679_.jpg",
+        url: "https://a.co/d/068bB2o1",
         category: "mug"
     },
     {
-        name: "RISHERLEY PREMIUM GROUND COFFEE, dark espresso roast, 12 oz (Pack of 4)",
-        price: 90,
-        description: "Bundle pack of 4 premium ground coffee bags. Perfect for coffee lovers who want to stock up on their favorite blend.",
-        image: "https://m.media-amazon.com/images/I/71F+KUoj8tL._SX679_PIbundle-4,TopRight,0,0_SX679SY602SH20_.jpg",
-        url: "https://a.co/d/07OuEABZ",
+        name: "30 oz Insulated Stainless Steel Tumbler with Lid and straw Double Wall Vacuum Travel Mug,Leak Proof Coffee Cup,Keeps Drinks Hot & Cold,BPA-Free Reusable Thermal Cup for Office,Gym & Car.",
+        price: 29.99,
+        description: "Material: Stainless Steel,Recycled plastic. Capacity: 1.9lb. Special Feature: Adjustable.",
+        image: "https://m.media-amazon.com/images/I/51SAUE6Xj-L._AC_SX679_.jpg",
+        url: "https://a.co/d/05Ed3REr",
+        category: "mug"
+    },
+    {
+        name: "40 oz Insulated Stainless Steel Tumbler with Lid and straw Double Wall Vacuum Travel Mug,Leak Proof Coffee Cup,Keeps Drinks Hot & Cold,BPA-Free Reusable Thermal Cup for Office,Gym & Car.",
+        price: 35.99,
+        description: "Hot more than 24 hours, cold more than 8 hours.",
+        image: "https://m.media-amazon.com/images/I/51h300tQLiL._AC_SY879_.jpg",
+        url: "https://a.co/d/03JrHF2e",
+        category: "mug"
+    },
+    {
+        name: "40 oz Insulated Stainless Steel Tumbler with Lid and straw Double Wall Vacuum Travel Mug,Leak Proof Coffee Cup,Keeps Drinks Hot & Cold,BPA-Free Reusable Thermal Cup for Office,Gym & Car.",
+        price: 35.99,
+        description: "Hot more than 24 hours, cold more than 8 hours.",
+        image: "https://m.media-amazon.com/images/I/512HMF4bnhL._AC_SY879_.jpg",
+        url: "https://a.co/d/0dHVGk17",
+        category: "mug"
+    },
+    {
+        name: "Risherley Premium Ground Coffee – Gourmet Arabica Blend, Fresh Roasted, Smooth Rich Flavor,Dark Roast, Low Acidity, Perfect for Drip, French Press & Espresso (PARK OF 2)",
+        price: "44.99 ($1.87/oz)",
+        description: "",
+        image: "https://m.media-amazon.com/images/I/614CrfCozVL._SX679_PIbundle-2,TopRight,0,0_AA679SH20_.jpg",
+        url: "https://a.co/d/0gYie1wl",
         category: "coffee"
     },
     {
-        name: "RISHERLEY PREMIUM GROUND COFFEE, dark espresso roast, 12 oz (Pack of 2)",
-        price: 48,
-        description: "Double pack of our premium ground coffee. Great value for everyday coffee enjoyment.",
-        image: "https://m.media-amazon.com/images/I/61cSQFhch3L._SX522_PIbundle-2,TopRight,0,0_SX522SY662SH20_.jpg",
-        url: "https://a.co/d/07tqNatN",
+        name: "Risherley Premium Ground Coffee – Gourmet Arabica Blend, Fresh Roasted, Smooth Rich Flavor,Dark Roast, Low Acidity, Perfect for Drip, French Press & Espresso (PARK OF 4)",
+        price: "84.99 ($1.77/oz)",
+        description: "",
+        image: "https://m.media-amazon.com/images/I/51kMzTn9fHL._SY679_PIbundle-4,TopRight,0,0_SX452SY679SH20_.jpg",
+        url: "https://a.co/d/0g1gKnaz",
         category: "coffee"
-    },
-    {
-        name: "TUMBLER WITH HANDLE AND STRAW, 40 oz, White, 100% Leak Proof, BPA-Free",
-        price: 45,
-        description: "Large 40 oz tumbler perfect for all-day hydration. Premium stainless steel construction with leak-proof lid.",
-        image: "https://m.media-amazon.com/images/I/51ZnHG752ZL._AC_SL1287_.jpg",
-        url: "https://a.co/d/004nOvii",
-        category: "mug"
-    },
-    {
-        name: "TUMBLER WITH HANDLE AND STRAW, 30 oz, Gray, 100% Leak Proof, BPA-Free",
-        price: 35,
-        description: "Sleek gray tumbler with handle and straw. Perfect for hot coffee or iced beverages.",
-        image: "https://m.media-amazon.com/images/I/61XLqEFbYWL._AC_SX679_.jpg",
-        url: "https://a.co/d/078aYeFw",
-        category: "mug"
-    },
-    {
-        name: "TUMBLER WITH HANDLE AND STRAW, 40 oz, Beige, 100% Leak Proof, BPA-Free",
-        price: 45,
-        description: "Elegant beige tumbler that keeps beverages at the perfect temperature. Durable and stylish.",
-        image: "https://m.media-amazon.com/images/I/61rsJsHLLsL._AC_SY300_SX300_QL70_FMwebp_.jpg",
-        url: "https://a.co/d/0cWxnKQu",
-        category: "mug"
     }
 ];
 
