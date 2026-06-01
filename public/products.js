@@ -19,7 +19,7 @@ const productList = [
    },
    {
         name: "12 oz Insulated Stainless Steel Tumbler with Lid and straw Double Wall Vacuum Travel Mug,Leak Proof Coffee Cup,Keeps Drinks Hot & Cold,BPA-Free Reusable Thermal Cup for Office,Gym & Car.",
-        price: "???",
+        price: 14.99,
         description: "",
         image: "https://m.media-amazon.com/images/I/51SQcs2uslL._AC_SX679_.jpg",
         url: "https://a.co/d/0ebiO3UV",
