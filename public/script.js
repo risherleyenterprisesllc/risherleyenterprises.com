@@ -40,7 +40,8 @@ if (contactForm) {
     
     contactForm.addEventListener("submit", function(e) {
         e.preventDefault();
-        
+
+        emailjs.sendForm("service_46nsjak", "template_xkc86zi", this)
         emailjs.sendForm("service_73pre4c", "template_q94nkln", this)
             .then(() => {
                 if (formMessage) {
